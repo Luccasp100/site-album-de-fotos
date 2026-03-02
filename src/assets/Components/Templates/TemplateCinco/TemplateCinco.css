@@ -1,0 +1,48 @@
+.template-container.cinco-simples {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.template-cinco-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+    gap: 30px;
+    transition: transform 0.8s ease-out;
+}
+
+.container-fotos-flex {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que as fotos pulem de linha */
+    justify-content: center;
+    /* Centraliza a última foto que sobrar */
+    gap: 15px;
+    max-width: 650px;
+    /* Limita a largura para caberem apenas 2 fotos por linha */
+}
+
+.template-image-cinco {
+    max-width: 300px;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    cursor: zoom-in;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.template-image-cinco:hover {
+    transform: scale(1.04);
+}
+
+.template-text-cinco {
+    font-size: 18px;
+    max-width: 600px;
+    text-align: center;
+    line-height: 1.6;
+}

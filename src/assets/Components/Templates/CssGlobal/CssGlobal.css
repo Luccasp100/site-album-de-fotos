@@ -1,0 +1,79 @@
+/* Títulos das datas */
+.template-container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Base de todos os wrappers (Animação) */
+.template-wrapper-base {
+    display: flex;
+    transition: transform 0.8s ease-out;
+}
+
+/* --- MODAL GLOBAL (O "escurecedor" e a foto expandida) --- */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    cursor: zoom-out;
+    backdrop-filter: blur(8px);
+    animation: fadeIn 0.3s ease forwards;
+}
+
+.modal-imagem {
+    max-width: 85%;
+    max-height: 85%;
+    border: 4px solid white;
+    animation: zoomGiroSuave 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.botao-fechar {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 60px;
+    cursor: pointer;
+}
+
+/* Estados da animação de Scroll */
+/* Animações (importante repetir para o Hook funcionar aqui) */
+.hidden {
+    transform: translateY(100px);
+}
+
+.show {
+    transform: translateY(0);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomGiroSuave {
+    from {
+        transform: scale(0.8) rotate(-5deg);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,48 @@
+.template-container.grid-quatro {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.template-grid-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+    gap: 30px;
+    transition: transform 0.8s ease-out;
+}
+
+.grid-quadrados {
+    display: grid;
+    /* Cria 2 colunas de tamanhos iguais */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    /* Espaço entre os quadrados */
+}
+
+.template-image-grid {
+    /* Tamanho fixo para todos os quadrados serem iguais */
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    cursor: zoom-in;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.template-image-grid:hover {
+    transform: scale(1.04);
+    /* Leve zoom ao passar o mouse */
+}
+
+.template-text-grid {
+    font-size: 18px;
+    max-width: 615px;
+    /* (300px * 2) + 15px de gap */
+    text-align: center;
+    line-height: 1.6;
+}

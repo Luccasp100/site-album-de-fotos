@@ -1,0 +1,52 @@
+.template-container.trio {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.template-trio-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* Empilha as linhas de fotos e o texto */
+    align-items: center;
+    margin: 40px auto;
+    gap: 20px;
+    transition: transform 0.8s ease-out;
+}
+
+.trio-linha-superior {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.trio-linha-inferior {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Fotos de cima menores para caberem lado a lado */
+.template-image-trio-small {
+    max-width: 390px;
+    max-height: 280px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    cursor: zoom-in;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.template-image-trio-small:hover {
+    transform: scale(1.04);
+}
+
+.template-text-trio {
+    font-size: 18px;
+    max-width: 600px;
+    text-align: center;
+    line-height: 1.6;
+    margin-top: 10px;
+}

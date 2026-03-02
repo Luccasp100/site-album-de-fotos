@@ -1,0 +1,42 @@
+.template-container {
+    text-align: center;
+}
+
+.template-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 50px;
+    gap: 150px;
+    transition: transform 0.8s ease-out;
+}
+
+/* 1. ESTA CLASSE EMPURRA O QUADRADO PARA A DIREITA */
+.template-content-wrapper.direita {
+    flex-direction: row
+}
+
+/* 2. ESTA CLASSE MUDA A INCLINAÇÃO DA IMAGEM */
+.template-image-direita {
+    max-width: 500px;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    transform: rotate(10deg);
+    /* Se o azul é -10, o verde é 10 (ou vice-versa) */
+    cursor: zoom-in;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.template-image-direita:hover {
+    transform: scale(1.04);
+}
+
+.template-text {
+    font-size: 18px;
+    max-width: 300px;
+    text-align: justify;
+}

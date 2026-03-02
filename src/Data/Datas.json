@@ -1,0 +1,89 @@
+[
+  {
+    "template": "ESQUERDA_TEXTO",
+    "tipo": "IMAGEMX",
+    "props": {
+      "data": "dia 14/04/2024",
+      "imagem": "./image/fundo1.png",
+      "texto": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quisquam soluta inventore magni ut quibusdam minima excepturi commodi, optio, eveniet at praesentium amet deleniti ipsam unde! Necessitatibus consequuntur molestias voluptate."
+    }
+  },
+  {
+    "template": "DIREITA_TEXTO",
+    "tipo": "IMAGEMX",
+    "props": {
+      "data": "dia 20/05/2024",
+      "imagem": "./image/fundo2.png",
+      "texto": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quisquam soluta inventore magni ut quibusdam minima excepturi commodi, optio, eveniet at praesentium amet deleniti ipsam unde! Necessitatibus consequuntur molestias voluptate."
+    }
+  },
+  {
+    "template": "CENTRAL_IMAGEM",
+    "tipo": "IMAGEMX",
+    "props": {
+      "data": "dia 17/01/2026",
+      "imagem": "/image/fundo3.png",
+      "texto": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quisquam soluta inventore magni ut quibusdam minima excepturi commodi, optio, eveniet at praesentium amet deleniti ipsam unde! Necessitatibus consequuntur molestias voluptate."
+    }
+  },
+  {
+    "template": "DUPLO_IMAGEM",
+    "tipo": "IMAGEMY",
+    "props": {
+      "data": "dia 25/02/2026",
+      "imagem1": "/image/fundo4.png",
+      "imagem2": "/image/fundo4.png",
+      "texto": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quisquam soluta inventore magni ut quibusdam minima excepturi commodi, optio, eveniet at praesentium amet deleniti ipsam unde! Necessitatibus consequuntur molestias voluptate."
+    }
+  },
+  {
+    "template": "TRIO_IMAGEM",
+    "tipo": "IMAGEMY",
+    "props": {
+      "data": "dia 01/03/2026",
+      "imagem1": "/image/fundo5.png",
+      "imagem2": "/image/fundo5.png",
+      "imagem3": "/image/fundo5.png",
+      "texto": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quisquam soluta inventore magni ut quibusdam minima excepturi commodi, optio, eveniet at praesentium amet deleniti ipsam unde! Necessitatibus consequuntur molestias voluptate."
+    }
+  },
+  {
+    "template": "QUATRO_IMAGEM",
+    "tipo": "IMAGEMZ",
+    "props": {
+      "data": "dia 10/03/2026",
+      "imagem1": "/image/fundo6.png",
+      "imagem2": "/image/fundo6.png",
+      "imagem3": "/image/fundo6.png",
+      "imagem4": "/image/fundo6.png",
+      "texto": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quisquam soluta inventore magni ut quibusdam minima excepturi commodi, optio, eveniet at praesentium amet deleniti ipsam unde! Necessitatibus consequuntur molestias voluptate."
+    }
+  },
+  {
+    "template": "CINCO_IMAGEM",
+    "tipo": "IMAGEMZ",
+    "props": {
+      "data": "dia 15/03/2026",
+      "imagem1": "/image/fundo7.png",
+      "imagem2": "/image/fundo7.png",
+      "imagem3": "/image/fundo7.png",
+      "imagem4": "/image/fundo7.png",
+      "imagem5": "/image/fundo7.png",
+      "texto": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quisquam soluta inventore magni ut quibusdam minima excepturi commodi, optio, eveniet at praesentium amet deleniti ipsam unde! Necessitatibus consequuntur molestias voluptate."
+    }
+  },
+  {
+    "template": "SEIS_IMAGEM",
+    "tipo": "IMAGEMZ",
+    "props": {
+      "data": "dia 20/03/2026",
+      "imagem1": "/image/fundo8.png",
+      "imagem2": "/image/fundo8.png",
+      "imagem3": "/image/fundo8.png",
+      "imagem4": "/image/fundo8.png",
+      "imagem5": "/image/fundo8.png",
+      "imagem6": "/image/fundo8.png",
+      "texto": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quisquam soluta inventore magni ut quibusdam minima excepturi commodi, optio, eveniet at praesentium amet deleniti ipsam unde! Necessitatibus consequuntur molestias voluptate."
+    }
+  }
+]

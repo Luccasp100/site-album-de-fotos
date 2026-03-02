@@ -1,0 +1,41 @@
+.template-container.central {
+    text-align: center;
+    padding: 60px 0;
+    width: 100%;
+}
+
+.template-central-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    /* Ajustei para auto para centralizar melhor */
+    gap: 20px;
+    transition: transform 0.8s ease-out;
+}
+
+.template-image-central {
+    max-width: 600px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    cursor: zoom-in;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.template-image-central:hover {
+    transform: scale(1.04);
+}
+
+.template-text-central {
+    font-size: 18px;
+    max-width: 600px;
+    text-align: center;
+    line-height: 1.6;
+    margin: 0;
+}
