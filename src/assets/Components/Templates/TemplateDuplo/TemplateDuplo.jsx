@@ -14,7 +14,7 @@ function TemplateDuplo({ data, imagem1, imagem2, texto }) {
 
     return (
         <section className='template-container duplo'>
-            <h1>{data}</h1>
+            <h1>______{data}______</h1>
 
             <div ref={elementoRef} className='template-duplo-wrapper hidden'>
                 <div className="duplo-imagens-container">

@@ -15,7 +15,7 @@ function TemplateCinco({ data, imagem1, imagem2, imagem3, imagem4, imagem5, text
 
     return (
         <section className='template-container cinco-simples'>
-            <h1>{data}</h1>
+            <h1>______{data}______</h1>
 
             <div ref={elementoRef} className='template-cinco-wrapper hidden'>
                 <div className="container-fotos-flex">

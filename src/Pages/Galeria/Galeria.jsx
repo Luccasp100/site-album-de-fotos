@@ -4,7 +4,6 @@ import './Galeria.css';
 import '../../assets/Components/Templates/CssGlobal/CssGlobal.css';
 
 function Galeria({ categoria }) {
-    // Estado para controlar qual foto está aberta e os dados dela
     const [fotoAberta, setFotoAberta] = useState(null);
 
     const itensFiltrados = dadosJson.filter(item => item.tipo === categoria);
@@ -33,26 +32,24 @@ function Galeria({ categoria }) {
                 })}
             </div>
 
-            {/* O MODAL COPIADO (Renderização Condicional) */}
+            {/* MODAL COM ROLAGEM INTERNA */}
             {fotoAberta && (
                 <div className="modal-overlay" onClick={() => setFotoAberta(null)}>
-                    {/* Botão de fechar com a classe correta do seu CSS */}
                     <button className="botao-fechar" onClick={() => setFotoAberta(null)}>
                         &times;
                     </button>
 
-                    {/* Imagem com a classe .modal-imagem para pegar a animação zoomGiroSuave */}
-                    <img
-                        className="modal-imagem"
-                        src={fotoAberta.url}
-                        alt="Expandida"
-                        //onClick={(e) => e.stopPropagation()} // Evita fechar ao clicar na foto
-                    />
+                    <div className="modal-wrapper-conteudo" /*onClick={(e) => e.stopPropagation()}*/>
+                        <img
+                            className="galeria-modal-imagem"
+                            src={fotoAberta.url}
+                            alt="Expandida"
+                        />
 
-                    {/* Se você quiser exibir o texto e a data, eles precisam de classes novas ou extras */}
-                    <div className='galeria-imagem-container'>
-                        <p className='galeria-imagem-container-data'>{fotoAberta.data}</p>
-                        <h3 className='galeria-imagem-container-texto'>{fotoAberta.texto}</h3>
+                        <div className='galeria-imagem-container'>
+                            <p className='galeria-imagem-container-data'>{fotoAberta.data}</p>
+                            <h3 className='galeria-imagem-container-texto'>{fotoAberta.texto}</h3>
+                        </div>
                     </div>
                 </div>
             )}

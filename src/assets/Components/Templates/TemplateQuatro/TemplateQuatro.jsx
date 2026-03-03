@@ -15,7 +15,7 @@ function TemplateGrid({ data, imagem1, imagem2, imagem3, imagem4, texto }) {
 
     return (
         <section className='template-container grid-quatro'>
-            <h1>{data}</h1>
+            <h1>______{data}______</h1>
 
             <div ref={elementoRef} className='template-grid-wrapper hidden'>
                 <div className="grid-quadrados">
