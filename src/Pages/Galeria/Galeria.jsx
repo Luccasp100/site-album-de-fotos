@@ -10,6 +10,9 @@ function Galeria({ categoria }) {
 
     return (
         <div className="galeria-container">
+            <h1 className="galeria-titulo-principal">
+                Galeria de imagens de {categoria}
+            </h1>
             <div className="galeria-grid">
                 {itensFiltrados.map((item, indexItem) => {
                     const imagensDoItem = Object.keys(item.props)
@@ -53,7 +56,7 @@ function Galeria({ categoria }) {
                     </div>
                 </div>
             )}
-        </div>  
+        </div>
     );
 }
 

@@ -15,7 +15,7 @@ function TemplateSeis({ data, imagem1, imagem2, imagem3, imagem4, imagem5, image
 
     return (
         <section className='template-container seis-grid'>
-            <h1>______{data}______</h1>
+            <h1 className='titulo-data-imagem-home'>______{data}______</h1>
 
             <div ref={elementoRef} className='template-seis-wrapper hidden'>
                 <div className="grid-seis-quadrados">

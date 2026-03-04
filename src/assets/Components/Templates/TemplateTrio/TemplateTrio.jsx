@@ -13,7 +13,7 @@ function TemplateTrio({ data, imagem1, imagem2, imagem3, texto }) {
 
     return (
         <section className='template-container trio'>
-            <h1>______{data}______</h1>
+            <h1 className='titulo-data-imagem-home'>______{data}______</h1>
 
             <div ref={elementoRef} className='template-trio-wrapper hidden'>
                 {/* Linha de cima: 2 imagens */}

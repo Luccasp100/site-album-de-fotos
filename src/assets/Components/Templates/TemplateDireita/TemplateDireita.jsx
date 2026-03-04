@@ -13,7 +13,7 @@ function TemplateDireita({ data, imagem, texto }) {
 
     return (
         <section className='template-container'>
-            <h1>______{data}______</h1>
+            <h1 className='titulo-data-imagem-home'>______{data}______</h1>
             
             <div ref={elementoRef} className='template-content-wrapper direita hidden'>
                 <p className='template-text'>{texto}</p>

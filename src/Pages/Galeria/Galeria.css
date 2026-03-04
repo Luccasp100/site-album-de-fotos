@@ -10,6 +10,13 @@
     margin: 0 auto;
 }
 
+.galeria-titulo-principal {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
 .galeria-item {
     max-width: 200px;
     max-height: 200px;
@@ -27,7 +34,7 @@
     height: auto;
     object-fit: contain;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);  
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .galeria-item:hover {
@@ -59,9 +66,10 @@
     align-items: center;
     /* Ajustado para 85% para bater com a Home */
     max-width: 85%;
-    max-height: 85%; 
+    max-height: 85%;
     overflow-y: auto;
-    scrollbar-width: thin; /* Esconde scroll no Firefox */
+    scrollbar-width: thin;
+    /* Esconde scroll no Firefox */
 }
 
 /* --- BARRA DE ROLAGEM MINIMALISTA --- */
@@ -85,7 +93,8 @@
 .galeria-modal-imagem {
     width: auto;
     height: auto;
-    max-height: 70vh; /* Limita a altura para o texto aparecer sem scroll se for curto */
+    max-height: 70vh;
+    /* Limita a altura para o texto aparecer sem scroll se for curto */
     object-fit: contain;
     border: 4px solid white;
     flex-shrink: 0;
@@ -101,7 +110,7 @@
 }
 
 .galeria-imagem-container-data {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     opacity: 0.8;
 }
 

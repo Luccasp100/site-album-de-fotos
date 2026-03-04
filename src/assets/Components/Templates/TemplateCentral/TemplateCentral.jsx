@@ -13,7 +13,7 @@ function TemplateCentral({ data, imagem, texto }) {
 
     return (
         <section className='template-container central'>
-            <h1>______{data}______</h1>
+            <h1 className='titulo-data-imagem-home'>______{data}______</h1>
 
             <div ref={elementoRef} className='template-central-wrapper hidden'>
                 <img
