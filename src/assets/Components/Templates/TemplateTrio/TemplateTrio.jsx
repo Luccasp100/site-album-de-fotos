@@ -42,7 +42,7 @@ function TemplateTrio({ data, imagem1, imagem2, imagem3, texto }) {
                     />
                 </div>
                 
-                {texto && <p className='template-text-trio'>{texto}</p>}
+                {texto && <p className='template-text-trio texto-template-imagem-home'>{texto}</p>}
             </div>
 
             {fotoFoco && createPortal(

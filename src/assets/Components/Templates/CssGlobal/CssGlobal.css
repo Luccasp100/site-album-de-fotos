@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap');
+
 /* Títulos das datas */
 .template-container {
     text-align: center;
@@ -12,6 +14,13 @@
     font-family: "Great Vibes", cursive;
     font-weight: 400;
     font-style: normal;
+}
+
+.texto-template-imagem-home {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
 }
 
 /* Base de todos os wrappers (Animação) */

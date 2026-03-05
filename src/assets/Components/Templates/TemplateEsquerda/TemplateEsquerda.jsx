@@ -22,7 +22,7 @@ function TemplateEsquerda({ data, imagem, texto }) {
                     alt="Ampliar"
                     onClick={() => setEstaAberto(true)}
                 />
-                <p className='template-text'>{texto}</p>
+                <p className='template-text texto-template-imagem-home'>{texto}</p>
             </div>
 
             {estaAberto && createPortal(

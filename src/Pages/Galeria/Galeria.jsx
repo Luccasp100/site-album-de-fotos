@@ -11,7 +11,7 @@ function Galeria({ categoria }) {
     return (
         <div className="galeria-container">
             <h1 className="galeria-titulo-principal">
-                Galeria de imagens de {categoria}
+                Galeria de imagens de <strong>{categoria}</strong>
             </h1>
             <div className="galeria-grid">
                 {itensFiltrados.map((item, indexItem) => {

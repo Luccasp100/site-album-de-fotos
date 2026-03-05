@@ -39,7 +39,6 @@
 }
 
 .template-text-seis {
-    font-size: 18px;
     /* Largura total do grid (250*3 + gaps) */
     max-width: 780px;
     text-align: center;

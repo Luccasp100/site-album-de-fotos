@@ -30,7 +30,7 @@ function TemplateGrid({ data, imagem1, imagem2, imagem3, imagem4, texto }) {
                     ))}
                 </div>
                 
-                {texto && <p className='template-text-grid'>{texto}</p>}
+                {texto && <p className='template-text-grid texto-template-imagem-home'>{texto}</p>}
             </div>
 
             {fotoFoco && createPortal(

@@ -30,7 +30,7 @@ function TemplateSeis({ data, imagem1, imagem2, imagem3, imagem4, imagem5, image
                     ))}
                 </div>
                 
-                {texto && <p className='template-text-seis'>{texto}</p>}
+                {texto && <p className='template-text-seis texto-template-imagem-home'>{texto}</p>}
             </div>
             {fotoFoco && createPortal(
                 <div className="modal-overlay" onClick={() => setFotoFoco(null)}>

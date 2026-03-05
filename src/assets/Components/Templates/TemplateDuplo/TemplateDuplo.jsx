@@ -31,7 +31,7 @@ function TemplateDuplo({ data, imagem1, imagem2, texto }) {
                     />
                 </div>
 
-                {texto && <p className='template-text-duplo'>{texto}</p>}
+                {texto && <p className='template-text-duplo texto-template-imagem-home'>{texto}</p>}
             </div>
 
             {fotoFoco && createPortal(

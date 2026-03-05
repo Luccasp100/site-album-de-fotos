@@ -23,7 +23,7 @@ function TemplateCentral({ data, imagem, texto }) {
                     onClick={() => setEstaAberto(true)}
                 />
                 {/* 2. SINTAXE CORRETA: O texto vai entre as tags <p> e </p> */}
-                {texto && <p className='template-text-central'>{texto}</p>}
+                {texto && <p className='template-text-central texto-template-imagem-home'>{texto}</p>}
             </div>
 
 

@@ -30,7 +30,7 @@ function TemplateCinco({ data, imagem1, imagem2, imagem3, imagem4, imagem5, text
                     ))}
                 </div>
                 
-                {texto && <p className='template-text-cinco'>{texto}</p>}
+                {texto && <p className='template-text-cinco texto-template-imagem-home'>{texto}</p>}
             </div>
 
             {fotoFoco && createPortal(

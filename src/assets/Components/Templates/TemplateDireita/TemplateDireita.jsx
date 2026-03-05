@@ -16,7 +16,7 @@ function TemplateDireita({ data, imagem, texto }) {
             <h1 className='titulo-data-imagem-home'>______{data}______</h1>
             
             <div ref={elementoRef} className='template-content-wrapper direita hidden'>
-                <p className='template-text'>{texto}</p>
+                <p className='template-text texto-template-imagem-home'>{texto}</p>
                 
                 <img 
                     className='template-image-direita' 
