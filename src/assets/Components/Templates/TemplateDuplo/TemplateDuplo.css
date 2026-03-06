@@ -7,21 +7,18 @@
 .template-duplo-wrapper {
     display: flex;
     flex-direction: column;
-    /* Empilha o bloco de fotos e o texto */
     align-items: center;
     justify-content: center;
     margin: 40px auto;
     gap: 30px;
     transition: transform 0.8s ease-out;
-    /* Apenas movimento, sem fade */
 }
 
 .duplo-imagens-container {
     display: flex;
     flex-direction: row;
-    /* Coloca as fotos lado a lado */
     gap: 20px;
-    /* Espaço entre as duas fotos */
+    justify-content: center; /* Garante centralização se as fotos forem pequenas */
 }
 
 .template-image-duplo {
@@ -33,7 +30,8 @@
     object-position: center;
     cursor: zoom-in;
     border-radius: 4px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    /*Sombra que segue a imagem, não o bloco */
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.2)); 
     transition: transform 0.3s ease;
 }
 
@@ -43,7 +41,6 @@
 
 .template-text-duplo {
     max-width: 820px;
-    /* Largura das duas fotos + gap */
     text-align: center;
     line-height: 1.6;
 }
