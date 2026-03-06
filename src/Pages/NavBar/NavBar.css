@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap');
+
 .home-container-nav {
     display: flex;
     justify-content: center; /* Centraliza o menu todo */
@@ -14,6 +16,11 @@
     padding-bottom: 8px;     /* Espaço para a linha não grudar no texto */
     transition: all 0.3s ease;
     border-bottom: 2px solid transparent; /* Linha invisível por padrão */
+}
+.home-container-nav-button{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .home-container-nav-button:hover {
