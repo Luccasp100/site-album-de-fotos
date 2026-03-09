@@ -17,12 +17,12 @@ function TemplateGrid({ data, imagem1, imagem2, imagem3, imagem4, texto }) {
         <section className='template-container grid-quatro'>
             <h1 className='titulo-data-imagem-home'>______{data}______</h1>
 
-            <div ref={elementoRef} className='template-grid-wrapper hidden'>
-                <div className="grid-quadrados">
+            <div ref={elementoRef} className='template-quadrado-wrapper hidden'>
+                <div className="quatro-quadrados">
                     {imagens.map((img, index) => (
                         <img
                             key={index}
-                            className='template-image-grid'
+                            className='template-imagem-quadrado'
                             src={img}
                             alt={`Foto ${index + 1}`}
                             onClick={() => setFotoFoco(img)}
@@ -30,7 +30,7 @@ function TemplateGrid({ data, imagem1, imagem2, imagem3, imagem4, texto }) {
                     ))}
                 </div>
                 
-                {texto && <p className='template-text-grid texto-template-imagem-home'>{texto}</p>}
+                {texto && <p className='template-texto-quadrado texto-template-imagem-home'>{texto}</p>}
             </div>
 
             {fotoFoco && createPortal(

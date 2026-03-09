@@ -15,11 +15,11 @@ function TemplateDireita({ data, imagem, texto }) {
         <section className='template-container'>
             <h1 className='titulo-data-imagem-home'>______{data}______</h1>
             
-            <div ref={elementoRef} className='template-content-wrapper direita hidden'>
-                <p className='template-text texto-template-imagem-home'>{texto}</p>
+            <div ref={elementoRef} className='template-content-wrapper-direita direita hidden'>
+                <p className='template-texto-direita texto-template-imagem-home'>{texto}</p>
                 
                 <img 
-                    className='template-image-direita' 
+                    className='template-imagem-direita' 
                     src={imagem} 
                     alt="Ampliar"
                     onClick={() => setEstaAberto(true)}

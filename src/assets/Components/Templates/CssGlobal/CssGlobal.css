@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap');
 
+body {
+    overflow-x: hidden; /* Evita scrolls horizontais acidentais */
+    transition: background-color 0.3s ease;
+}
+
 /* Títulos das datas */
 .template-container {
     text-align: center;

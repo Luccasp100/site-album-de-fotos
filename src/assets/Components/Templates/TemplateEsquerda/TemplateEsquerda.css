@@ -1,10 +1,10 @@
 @import "../CssGlobal//CssGlobal.css";
 
-.template-container {
+.template-container{
     text-align: center;
 }
 
-.template-content-wrapper {
+.template-content-wrapper-esquerda {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,7 +13,7 @@
     transition: transform 0.8s ease-out;
 }
 
-.template-image {
+.template-imagem-esquerda {
     max-width: 500px;
     max-height: 250px;
     width: auto;
@@ -26,11 +26,11 @@
     transition: transform 0.3s ease;
 }
 
-.template-image:hover {
+.template-imagem-esquerda:hover {
     transform: scale(1.04);
 }
 
-.template-text {
+.template-texto-esquerda {
     max-width: 300px;
     text-align: justify;
 }

@@ -15,14 +15,14 @@ function TemplateEsquerda({ data, imagem, texto }) {
         <section className='template-container'>
             <h1 className='titulo-data-imagem-home'>______{data}______</h1>
 
-            <div ref={elementoRef} className='template-content-wrapper hidden'>
+            <div ref={elementoRef} className='template-content-wrapper-esquerda hidden'>
                 <img
-                    className='template-image'
+                    className='template-imagem-esquerda'
                     src={imagem}
                     alt="Ampliar"
                     onClick={() => setEstaAberto(true)}
                 />
-                <p className='template-text texto-template-imagem-home'>{texto}</p>
+                <p className='template-texto-esquerda texto-template-imagem-home'>{texto}</p>
             </div>
 
             {estaAberto && createPortal(

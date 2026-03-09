@@ -3,7 +3,7 @@
     padding: 60px 0;
 }
 
-.template-grid-wrapper {
+.template-quadrado-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,7 +12,7 @@
     transition: transform 0.8s ease-out;
 }
 
-.grid-quadrados {
+.quatro-quadrados {
     display: grid;
     /* Cria 2 colunas de tamanhos iguais */
     grid-template-columns: repeat(2, 1fr);
@@ -20,7 +20,7 @@
     /* Espaço entre os quadrados */
 }
 
-.template-image-grid {
+.template-imagem-quadrado {
     /* Tamanho fixo para todos os quadrados serem iguais */
     max-width: 300px;
     max-height: 300px;
@@ -34,12 +34,12 @@
     transition: transform 0.3s ease;
 }
 
-.template-image-grid:hover {
+.template-imagem-quadrado:hover {
     transform: scale(1.04);
     /* Leve zoom ao passar o mouse */
 }
 
-.template-text-grid {
+.template-texto-quadrado {
     max-width: 615px;
     /* (300px * 2) + 15px de gap */
     text-align: center;

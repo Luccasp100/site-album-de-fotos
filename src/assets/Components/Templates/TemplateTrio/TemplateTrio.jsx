@@ -6,6 +6,7 @@ import './TemplateTrio.css';
 function TemplateTrio({ data, imagem1, imagem2, imagem3, texto }) {
     const [fotoFoco, setFotoFoco] = useState(null);
     const elementoRef = useScrollAnimation();
+    const imagens = [imagem1, imagem2, imagem3];
 
     useEffect(() => {
         document.body.style.overflow = fotoFoco ? 'hidden' : 'auto';
@@ -16,34 +17,18 @@ function TemplateTrio({ data, imagem1, imagem2, imagem3, texto }) {
             <h1 className='titulo-data-imagem-home'>______{data}______</h1>
 
             <div ref={elementoRef} className='template-trio-wrapper hidden'>
-                {/* Linha de cima: 2 imagens */}
-                <div className="trio-linha-superior">
+                {imagens.map((img, index) => (
                     <img
+                        key={index}
                         className='template-image-trio-small'
-                        src={imagem1}
-                        alt="Foto 1"
-                        onClick={() => setFotoFoco(imagem1)}
+                        src={img}
+                        alt={`Foto ${index + 1}`}
+                        onClick={() => setFotoFoco(img)}
                     />
-                    <img
-                        className='template-image-trio-small'
-                        src={imagem2}
-                        alt="Foto 2"
-                        onClick={() => setFotoFoco(imagem2)}
-                    />
-                </div>
+                ))}
 
-                {/* Linha de baixo: 1 imagem centralizada */}
-                <div className="trio-linha-inferior">
-                    <img
-                        className='template-image-trio-small'
-                        src={imagem3}
-                        alt="Foto 3"
-                        onClick={() => setFotoFoco(imagem3)}
-                    />
-                </div>
-                
-                {texto && <p className='template-text-trio texto-template-imagem-home'>{texto}</p>}
             </div>
+            {texto && <p className='template-text-trio texto-template-imagem-home'>{texto}</p>}
 
             {fotoFoco && createPortal(
                 <div className="modal-overlay" onClick={() => setFotoFoco(null)}>

@@ -39,7 +39,7 @@
     height: auto;
     object-fit: contain;
     border-radius: 10px;
-    box-shadow:0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .galeria-item:hover {
@@ -115,18 +115,19 @@
 }
 
 .galeria-imagem-container-data {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 1.2rem;
     opacity: 0.8;
 }
 
 .galeria-imagem-container-texto {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 1.4rem;
     margin-top: 5px;
     line-height: 1.5;
+}
+
+.galeria-imagem-container-data,
+.galeria-imagem-container-texto {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }

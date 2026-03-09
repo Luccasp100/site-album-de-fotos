@@ -2,7 +2,7 @@
     text-align: center;
 }
 
-.template-content-wrapper {
+.template-content-wrapper-direita {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,7 +17,7 @@
 }
 
 /* 2. ESTA CLASSE MUDA A INCLINAÇÃO DA IMAGEM */
-.template-image-direita {
+.template-imagem-direita {
     max-width: 500px;
     max-height: 250px;
     width: auto;
@@ -31,11 +31,11 @@
     transition: transform 0.3s ease;
 }
 
-.template-image-direita:hover {
+.template-imagem-direita:hover {
     transform: scale(1.04);
 }
 
-.template-text {
+.template-texto-direita {
     max-width: 300px;
     text-align: justify;
 }
