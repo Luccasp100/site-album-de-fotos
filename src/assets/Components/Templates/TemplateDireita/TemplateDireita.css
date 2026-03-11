@@ -39,3 +39,51 @@
     max-width: 300px;
     text-align: justify;
 }
+
+/*------------------RESPONSIVIDADE------------------*/
+
+/* Ajustes para Tablets e Laptops Pequenos (Até 1024px) */
+@media (max-width: 1024px) {
+    .template-content-wrapper-direita {
+        margin: 60px 40px; 
+        gap: 60px; /* Reduz de 150px para 60px para caber em notebooks pequenos */
+    }
+
+    .template-imagem-direita {
+        max-width: 400px; /* Diminui a foto de 500px para 400px */
+        transform: rotate(5deg); /* Suaviza a inclinação para não "bater" no texto */
+    }
+
+    .template-texto-direita {
+        max-width: 350px;
+    }
+}
+
+/* Ajustes para celulares(Até 768px) */
+@media (max-width: 768px) {
+    .template-content-wrapper-direita {
+        flex-direction: column; /* Empilha os elementos */
+        margin: 40px 20px;
+        gap: 30px; /* Espaçamento vertical entre foto e texto */
+    }
+
+    .template-imagem-direita {
+        order: 1; /* Força a imagem a ser o primeiro item */
+    }
+
+    .template-texto-direita {
+        order: 2; /* Força o texto a ser o segundo item */
+    }
+
+
+    .template-imagem-direita {
+        max-width: 90%; 
+        transform: rotate(0deg); /* Deixa a imagem reta para aproveitar a largura do celular */
+    }
+
+    .template-texto-direita {
+        max-width: 100%;
+        text-align: center; /* Texto centralizado fica melhor em telas estreitas */
+        padding: 0 10px;
+    }
+}

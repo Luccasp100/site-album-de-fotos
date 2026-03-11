@@ -40,3 +40,41 @@
     max-width: 700px;
     text-align: center;
 }
+
+/*------------------RESPONSIVIDADE------------------*/
+
+/* Ajustes para Tablets e Laptops Pequenos (Até 1024px) */
+@media (max-width: 1024px) {
+    .template-trio-wrapper {
+        max-width: 90%; /* Deixa o container mais flexível */
+        gap: 15px;
+    }
+
+    .template-image-trio-small {
+        max-width: 340px; /* Reduz de 390px para 340px */
+        max-height: 240px;
+    }
+}
+
+/* Ajustes para celulares(Até 768px) */
+@media (max-width: 768px) {
+    .template-trio-wrapper {
+        flex-direction: column; /* Garante uma foto por linha no celular */
+        margin: 20px auto;
+        gap: 15px;
+    }
+
+    .template-image-trio-small {
+        max-width: 100%; /* Ocupa a largura disponível */
+        max-height: 220px; /* Trava para as 3 fotos não ficarem gigantes no scroll */
+        width: auto;
+        object-fit: contain;
+    }
+
+    .template-text-trio {
+        max-width: 100%;
+        padding: 0 15px;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+}

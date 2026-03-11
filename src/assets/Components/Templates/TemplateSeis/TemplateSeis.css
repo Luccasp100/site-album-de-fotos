@@ -44,3 +44,50 @@
     text-align: center;
     line-height: 1.6;
 }
+
+/*------------------RESPONSIVIDADE------------------*/
+
+/* Ajustes para Tablets e Laptops Pequenos (Até 1024px) */
+@media (max-width: 1024px) {
+    .grid-seis-quadrados {
+        /* Muda de 3 para 2 colunas */
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 12px;
+    }
+
+    .template-image-seis {
+        max-width: 220px;
+        max-height: 220px;
+    }
+
+    .template-text-seis {
+        max-width: 460px; /* Ajusta para a largura de 2 fotos + gap */
+    }
+}
+
+/* Ajustes para celulares(Até 768px) */
+@media (max-width: 768px) {
+    .grid-seis-quadrados {
+        /* Uma imagem por linha */
+        grid-template-columns: 1fr; 
+        gap: 15px;
+    }
+
+    .template-image-seis {
+        max-width: 100%;
+        max-height: 200px; /* Altura um pouco menor por serem muitas fotos */
+        width: auto;
+        object-fit: contain;
+    }
+
+    .template-seis-wrapper {
+        margin: 20px auto;
+        gap: 20px;
+    }
+
+    .template-text-seis {
+        max-width: 100%;
+        padding: 0 15px;
+        font-size: 1rem;
+    }
+}

@@ -19,6 +19,7 @@ body {
     font-family: "Great Vibes", cursive;
     font-weight: 400;
     font-style: normal;
+    padding: 0 10px; /* Evita que o texto encoste nas bordas da tela */
 }
 
 .texto-template-imagem-home {
@@ -98,5 +99,15 @@ body {
     to {
         transform: scale(1) rotate(0deg);
         opacity: 1;
+    }
+}
+
+/*------------------RESPONSIVIDADE------------------*/
+
+@media (max-width: 768px) {
+    .titulo-data-imagem-home {
+        font-size: 2rem; /* Reduz o tamanho para caber em uma linha no celular */
+        margin-bottom: 15px;
+        line-height: 1.2; /* Melhora o espaçamento se o texto for muito longo */
     }
 }

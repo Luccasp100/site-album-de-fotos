@@ -64,7 +64,7 @@
     animation: fadeIn 0.3s ease forwards;
 }
 
-/* --- WRAPPER (ESTE É O SEGREDO) --- */
+/* --- WRAPPER --- */
 .modal-wrapper-conteudo {
     display: flex;
     flex-direction: column;
@@ -130,4 +130,72 @@
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+/* --- RESPONSIVIDADE DA GALERIA --- */
+
+/* Tablets e Laptops (Até 1024px) */
+@media (max-width: 1024px) {
+    .galeria-grid {
+        grid-template-columns: repeat(3, minmax(180px, 220px)); 
+        gap: 20px;
+        padding: 30px 20px;
+        justify-content: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* Celulares (Até 768px) */
+@media (max-width: 768px) {
+    .galeria-grid {
+        grid-template-columns: repeat(2, minmax(140px, 160px)); 
+        gap: 15px;
+        padding: 20px 10px;
+        justify-content: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* --- RESPONSIVIDADE DO MODAL --- */
+
+/* Tablets (Até 1024px) */
+@media (max-width: 1024px) {
+
+    /* Garante que o modal ocupe o espaço certo */
+    .modal-wrapper-conteudo {
+        max-width: 90%;
+        max-height: 90%;
+    }
+
+        .galeria-modal-imagem {
+        max-height: 50vh; 
+        width: auto;
+        max-width: 90%;
+        object-fit: contain;
+    }
+
+        .galeria-imagem-container-texto {
+        font-size: 1.2rem;
+        line-height: 1.4;
+        padding: 10px; /* Evita que o texto encoste nas bordas */
+    }
+}
+
+/* Celulares (Até 768px) */
+@media (max-width: 768px) {
+
+    .galeria-modal-imagem {
+        max-height: 40vh; /* Diminuímos para garantir que o texto apareça embaixo */
+        width: auto;
+        max-width: 90%;
+        object-fit: contain; /* No modal SEMPRE usar contain para ver a foto inteira */
+    }
+
+    .galeria-imagem-container-texto {
+        font-size: 1rem;
+        line-height: 1.4;
+        padding: 10px; /* Evita que o texto encoste nas bordas */
+    }
 }

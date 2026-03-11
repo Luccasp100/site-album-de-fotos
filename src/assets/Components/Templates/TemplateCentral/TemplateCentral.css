@@ -38,3 +38,38 @@
     line-height: 1.6;
     margin: 0;
 }
+
+/*------------------RESPONSIVIDADE------------------*/
+
+/* 1º: Ajustes para Tablets e Laptops Pequenos (Até 1024px) */
+@media (max-width: 1024px) {
+    .template-image-central {
+        max-width: 500px;
+        max-height: 350px;
+    }
+    .template-text-central {
+        max-width: 500px;
+    }
+}
+
+/*Ajustes para celulares (Até 768px)*/
+@media (max-width: 768px) {
+    .template-central-wrapper {
+        margin: 20px auto;
+        padding: 0 20px;
+        gap: 15px;
+    }
+
+    .template-image-central {
+        max-width: 100% !important; /* Adicionamos !important para garantir a vitória sobre o bloco de 1024 */
+        max-height: 250px; 
+        width: auto;
+        object-fit: contain;
+    }
+
+    .template-text-central {
+        max-width: 100%;
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+}

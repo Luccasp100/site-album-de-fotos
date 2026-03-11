@@ -45,3 +45,44 @@
     text-align: center;
     line-height: 1.6;
 }
+
+/*------------------RESPONSIVIDADE------------------*/
+
+/* Ajustes para Tablets e Laptops Pequenos (Até 1024px) */
+@media (max-width: 1024px) {
+    .container-fotos-flex {
+        max-width: 550px; /* Reduz levemente para garantir que as fotos caibam com folga */
+        gap: 10px;
+    }
+
+    .template-image-cinco {
+        max-width: 260px; /* Ajuste proporcional */
+    }
+}
+
+/* Ajustes para celulares(Até 768px) */
+@media (max-width: 768px) {
+    .container-fotos-flex {
+        flex-direction: column; /* Alinha as 5 fotos verticalmente */
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .template-image-cinco {
+        max-width: 100%; 
+        max-height: 220px; /* Trava de altura para o scroll não ficar infinito */
+        width: auto;
+        object-fit: contain;
+    }
+
+    .template-cinco-wrapper {
+        margin: 20px auto;
+        gap: 20px;
+    }
+
+    .template-text-cinco {
+        max-width: 100%;
+        padding: 0 15px;
+        font-size: 1rem;
+    }
+}

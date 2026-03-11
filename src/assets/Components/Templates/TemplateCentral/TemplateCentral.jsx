@@ -26,7 +26,6 @@ function TemplateCentral({ data, imagem, texto }) {
                 {texto && <p className='template-text-central texto-template-imagem-home'>{texto}</p>}
             </div>
 
-
             {estaAberto && createPortal(
                 <div className="modal-overlay" onClick={() => setEstaAberto(false)}>
                     <button className="botao-fechar" onClick={() => setEstaAberto(false)}>&times;</button>

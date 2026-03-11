@@ -44,3 +44,45 @@
     text-align: center;
     line-height: 1.6;
 }
+
+/*------------------RESPONSIVIDADE------------------*/
+
+/* Ajustes para Tablets e Laptops Pequenos (Até 1024px) */
+@media (max-width: 1024px) {
+    .template-image-duplo {
+        max-width: 350px; /* Reduz de 400px para 350px */
+        max-height: 250px;
+    }
+
+    .template-text-duplo {
+        max-width: 700px;
+        padding: 0 20px;
+    }
+}
+
+/* Ajustes para celulares(Até 768px) */
+@media (max-width: 768px) {
+    .duplo-imagens-container {
+        flex-direction: column; /* Empilha as duas imagens uma em cima da outra */
+        align-items: center;
+        gap: 15px;
+    }
+
+    .template-image-duplo {
+        max-width: 100%; /* Ocupa a largura do celular */
+        max-height: 220px; /* Trava de altura para não dominar a tela */
+        width: auto;
+        object-fit: contain;
+    }
+
+    .template-duplo-wrapper {
+        margin: 20px auto;
+        gap: 20px;
+    }
+
+    .template-text-duplo {
+        max-width: 100%;
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+}
