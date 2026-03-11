@@ -104,10 +104,26 @@ body {
 
 /*------------------RESPONSIVIDADE------------------*/
 
+@media (max-width: 1024px) {
+
+    .modal-imagem {
+        max-width: 80%;
+        max-height: 80%;
+    }
+
+}
+
 @media (max-width: 768px) {
     .titulo-data-imagem-home {
-        font-size: 2rem; /* Reduz o tamanho para caber em uma linha no celular */
+        font-size: 2rem;
+        /* Reduz o tamanho para caber em uma linha no celular */
         margin-bottom: 15px;
-        line-height: 1.2; /* Melhora o espaçamento se o texto for muito longo */
+        line-height: 1.2;
+        /* Melhora o espaçamento se o texto for muito longo */
+    }
+
+    .modal-imagem {
+        max-width: 75%;
+        max-height: 75%;
     }
 }
