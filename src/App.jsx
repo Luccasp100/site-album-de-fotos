@@ -3,6 +3,7 @@ import Home from './Pages/Home';
 import Navbar from './Pages/NavBar/NavBar'; 
 import Galeria from './Pages/Galeria/Galeria'; 
 import BotaoVoltarAoTopo from './assets/Components/BotaoVoltarAoTopo/BotaoVoltarAoTopo';
+import Footer from './Pages/Footer/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/imagemZ" element={<Galeria categoria="IMAGEMZ" />} />
       </Routes>
       <BotaoVoltarAoTopo /> 
+      <Footer/>
     </Router>
   );
 }
