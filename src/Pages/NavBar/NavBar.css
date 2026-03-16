@@ -2,33 +2,51 @@
 
 .home-container-nav {
     display: flex;
-    justify-content: center; /* Centraliza o menu todo */
-    gap: 40px;               /* Espaçamento generoso entre os links */
-    padding: 30px 0;
-    border-bottom: 1px solid #eee; /* Linha sutil para separar do conteúdo */
+    justify-content: center;
+    /* PERMITE QUE OS LINKS DESÇAM SE NÃO COUBEREM */
+    flex-wrap: wrap; 
+    gap: 40px;
+    padding: 30px 20px; /* Adicionado padding lateral para não encostar na borda */
+    border-bottom: 1px solid #eee;
     margin-bottom: 40px;
 }
 
 .home-container-nav-button {
     text-decoration: none;
     font-size: 18px;
-    font-weight: 500;
-    padding-bottom: 8px;     /* Espaço para a linha não grudar no texto */
-    transition: all 0.3s ease;
-    border-bottom: 2px solid transparent; /* Linha invisível por padrão */
-}
-.home-container-nav-button{
-    font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-style: normal;
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 8px;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap; /* Impede que o texto "imagemX" quebre no meio */
 }
 
-.home-container-nav-button:hover {
-    color: #000;
-    border-bottom: 2px solid; /* A linha aparece no hover, como na imagem */
+.home-container-nav-button:hover, .active-link {
+    border-bottom: 2px solid; /* Cor roxa sutil para combinar com seu ativo */
 }
 
-/* Classe para o link que está ativo (opcional, se quiser destacar onde o usuário está) */
-.active-link {
-    border-bottom: 2px solid;
+/* --- RESPONSIVIDADE PARA CELULARES --- */
+
+@media (max-width: 768px) {
+    .home-container-nav {
+        gap: 15px;      /* Diminui o espaço entre os links no celular */
+        padding: 20px 10px;
+        margin-bottom: 20px;
+    }
+
+    .home-container-nav-button {
+        font-size: 15px; /* Diminui um pouco a letra para caber tudo em uma linha */
+    }
+}
+
+/* Para celulares muito pequenos (abaixo de 360px) */
+@media (max-width: 360px) {
+    .home-container-nav {
+        gap: 10px;
+    }
+    
+    .home-container-nav-button {
+        font-size: 13px;
+    }
 }
