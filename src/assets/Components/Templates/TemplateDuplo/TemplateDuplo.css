@@ -70,7 +70,7 @@
 
     .template-image-duplo {
         max-width: 100%; /* Ocupa a largura do celular */
-        max-height: 220px; /* Trava de altura para não dominar a tela */
+        max-height: 200px; /* Trava de altura para não dominar a tela */
         width: auto;
         object-fit: contain;
     }

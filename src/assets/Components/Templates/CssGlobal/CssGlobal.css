@@ -131,7 +131,7 @@ body {
 /* Nova Query para celulares pequenos/médios (como o A16, A23 em modo retrato) */
 @media (max-width: 480px) {
     .titulo-data-imagem-home {
-        font-size: 1.4rem; /* Redução extra para garantir que caiba em telas estreitas */
+        font-size: 1.5rem; /* Redução extra para garantir que caiba em telas estreitas */
         margin-top: 10px;
     }
     

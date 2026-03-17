@@ -71,7 +71,7 @@
 
     .template-imagem-quadrado {
         max-width: 100%; /* Ocupa a largura total disponível */
-        max-height: 220px; /* Nossa trava de segurança para não dominar a tela */
+        max-height: 200px; /* Nossa trava de segurança para não dominar a tela */
         width: auto;
         object-fit: contain;
     }
