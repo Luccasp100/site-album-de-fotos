@@ -89,7 +89,6 @@
 /* Cor de fundo quando ativado */
 input:checked+.slider {
     background-color: #5d3fd3;
-    /* Seu roxo padrão ou cor de sua preferência */
 }
 
 /* Move a bolinha para a direita */
@@ -102,27 +101,26 @@ input:checked+.slider:before {
     position: absolute;
     z-index: 2;
     top: 4px;
-    /* Mesma distância do topo que a bolinha (:before) */
     left: 4px;
-    /* Mesma distância da esquerda que a bolinha (:before) */
     width: 22px;
-    /* Mesma largura da bolinha branca */
     height: 22px;
-    /* Mesma altura da bolinha branca */
-
     display: flex;
     align-items: center;
     justify-content: center;
-
-    font-size: 14px;
-    /* Ajuste o tamanho do emoji se necessário */
     transition: .4s;
     pointer-events: none;
-    /* Garante que o clique passe direto para o input */
+    user-select: none;
 }
 
-/* Move o emoji junto com a bolinha quando estiver marcado */
-input:checked+.slider .icon {
+/* Estilo específico para o arquivo SVG */
+.toggle-icon-img {
+    width: 75%;  /* este valor para o ícone não ficar "colado" nas bordas da bolinha */
+    height: 75%;
+    object-fit: contain;
+}
+
+/* Mantém o movimento sincronizado */
+input:checked + .slider .icon {
     transform: translateX(30px);
 }
 

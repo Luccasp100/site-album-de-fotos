@@ -35,7 +35,13 @@ function Navbar() {
                         onChange={() => setIsDarkMode(!isDarkMode)}
                     />
                     <span className="slider">
-                        <span className="icon">{isDarkMode ? '🌙' : '☀️'}</span>
+                        <span className="icon">
+                            <img
+                                src={isDarkMode ? './image/Moon.svg' : './image/Sun.svg'}
+                                alt={isDarkMode ? 'Moon' : 'Sun'}
+                                className="toggle-icon-img"
+                            />
+                        </span>
                     </span>
                 </label>
             </div>
