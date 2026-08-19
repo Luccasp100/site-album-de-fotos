@@ -1,16 +1,27 @@
-# React + Vite
+# 📸 Galeria & Álbum de Memórias
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um projeto interativo desenvolvido em React para exibição de memórias fotográficas organizadas por datas e categorias dinâmicas através de arquivos JSON.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Objetivo do Projeto
 
-## React Compiler
+Este projeto foi desenvolvido exclusivamente para **fins de estudo, treino e consolidação de aprendizados** em desenvolvimento Front-End. O foco principal foi praticar a manipulação avançada de estados no React, componentização limpa, consumo e filtragem de dados estruturados em JSON, além da criação de um Modal/Lightbox interativo e layouts responsivos com CSS Grid.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 Tecnologias Utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **React** (Componentização, Hooks e Portais)
+* **Vite** (Build tool e desenvolvimento rápido)
+* **CSS3** (Flexbox, CSS Grid e Dark Mode)
+* **JavaScript** (Manipulação de arrays com `.map`)
+
+---
+
+## ✨ Funcionalidades
+
+* **Layout Flexível por Quantidade de Fotos**: Ajuste automático da grade dependendo de quantas imagens o bloco possui (1, 2, 3, 4, 5 ou 6 fotos).
+* **Navegação por Galerias**: Filtro dinâmico por categoria (`tipo: "IMAGEMX"`) consumindo dados diretamente do JSON.
+* **Modal / Lightbox**: Visualização em tela cheia da foto selecionada com dados e texto da memória.
+* **Dark Mode**: Suporte a alternância de temas visualmente integrados.
